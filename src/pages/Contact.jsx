@@ -217,8 +217,9 @@ export default function Contact() {
         <div className="relative container-wide pb-14 sm:pb-18 pt-32 sm:pt-40">
           {/* Location badge */}
           <div
-            className={`mb-4 sm:mb-5 transition-all duration-700 delay-100 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
+            className={`mb-4 sm:mb-5 transition-all duration-700 delay-100 ${
+              heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
           >
             <span className="inline-flex items-center gap-2.5 px-3 py-1 bg-charcoal-900/90 border border-charcoal-700/80 text-concrete-300 font-heading font-600 text-[11px] sm:text-xs tracking-[0.22em] uppercase backdrop-blur-sm">
               <span className="h-1.5 w-1.5 rounded-full bg-brand-yellow shrink-0" />
@@ -228,8 +229,9 @@ export default function Contact() {
 
           {/* Eyebrow */}
           <div
-            className={`transition-all duration-700 delay-150 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
+            className={`transition-all duration-700 delay-150 ${
+              heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
           >
             <p className="font-heading font-700 text-brand-yellow text-xs sm:text-sm tracking-[0.28em] uppercase mb-2 sm:mb-3">
               GET IN TOUCH
@@ -238,8 +240,9 @@ export default function Contact() {
 
           {/* Heading */}
           <div
-            className={`transition-all duration-700 delay-200 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-              }`}
+            className={`transition-all duration-700 delay-200 ${
+              heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
           >
             <h1
               className="font-heading font-900 text-white tracking-tight leading-[1.04]"
@@ -253,8 +256,9 @@ export default function Contact() {
 
           {/* Supporting text */}
           <p
-            className={`mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-concrete-300 max-w-2xl leading-relaxed transition-all duration-700 delay-300 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
-              }`}
+            className={`mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-concrete-300 max-w-2xl leading-relaxed transition-all duration-700 delay-300 ${
+              heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            }`}
           >
             Tell us about your construction project and we'll have a better understanding of what you're planning to build.
           </p>
@@ -286,16 +290,18 @@ export default function Contact() {
             <button
               type="button"
               onClick={() => handleSelectProjectType('residential')}
-              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${form.projectType === 'residential'
-                ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
-                : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
-                }`}
+              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${
+                form.projectType === 'residential'
+                  ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
+                  : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
+              }`}
             >
               <div
-                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${form.projectType === 'residential'
-                  ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
-                  : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
-                  }`}
+                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${
+                  form.projectType === 'residential'
+                    ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
+                    : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
+                }`}
               >
                 <Home size={18} />
               </div>
@@ -320,16 +326,18 @@ export default function Contact() {
             <button
               type="button"
               onClick={() => handleSelectProjectType('apartment')}
-              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${form.projectType === 'apartment'
-                ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
-                : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
-                }`}
+              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${
+                form.projectType === 'apartment'
+                  ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
+                  : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
+              }`}
             >
               <div
-                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${form.projectType === 'apartment'
-                  ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
-                  : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
-                  }`}
+                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${
+                  form.projectType === 'apartment'
+                    ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
+                    : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
+                }`}
               >
                 <Building2 size={18} />
               </div>
@@ -354,16 +362,18 @@ export default function Contact() {
             <button
               type="button"
               onClick={() => handleSelectProjectType('industrial')}
-              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${form.projectType === 'industrial'
-                ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
-                : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
-                }`}
+              className={`p-5 text-left border transition-all duration-200 flex items-start gap-4 active:scale-[0.99] ${
+                form.projectType === 'industrial'
+                  ? 'bg-charcoal-800 border-brand-yellow shadow-lg'
+                  : 'bg-charcoal-900 border-charcoal-700 hover:border-concrete-500'
+              }`}
             >
               <div
-                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${form.projectType === 'industrial'
-                  ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
-                  : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
-                  }`}
+                className={`w-10 h-10 flex items-center justify-center shrink-0 border ${
+                  form.projectType === 'industrial'
+                    ? 'bg-brand-yellow text-charcoal-900 border-brand-yellow'
+                    : 'bg-charcoal-800 text-brand-yellow border-charcoal-700'
+                }`}
               >
                 <Factory size={18} />
               </div>
@@ -472,7 +482,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <p className="font-heading font-800 text-white text-xs tracking-[0.16em] uppercase">
-                          ENGINEERS
+                          OWNERS
                         </p>
                         <div className="mt-1 space-y-0.5">
                           {company.owners.map((owner) => (
@@ -609,8 +619,9 @@ export default function Contact() {
                               value={form.name}
                               onChange={handleChange}
                               placeholder="e.g. Rahul Patil"
-                              className={`${fieldBase} ${errors.name ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                                }`}
+                              className={`${fieldBase} ${
+                                errors.name ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                              }`}
                               aria-invalid={!!errors.name}
                               aria-describedby={errors.name ? 'name-error' : undefined}
                             />
@@ -637,8 +648,9 @@ export default function Contact() {
                               value={form.phone}
                               onChange={handleChange}
                               placeholder="e.g. +91 98765 43210"
-                              className={`${fieldBase} ${errors.phone ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                                }`}
+                              className={`${fieldBase} ${
+                                errors.phone ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                              }`}
                               aria-invalid={!!errors.phone}
                               aria-describedby={errors.phone ? 'phone-error' : undefined}
                             />
@@ -668,8 +680,9 @@ export default function Contact() {
                               value={form.email}
                               onChange={handleChange}
                               placeholder="e.g. rahul@example.com"
-                              className={`${fieldBase} ${errors.email ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                                }`}
+                              className={`${fieldBase} ${
+                                errors.email ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                              }`}
                               aria-invalid={!!errors.email}
                               aria-describedby={errors.email ? 'email-error' : undefined}
                             />
@@ -694,8 +707,9 @@ export default function Contact() {
                                 name="projectType"
                                 value={form.projectType}
                                 onChange={handleChange}
-                                className={`${fieldBase} appearance-none pr-10 cursor-pointer ${errors.projectType ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                                  }`}
+                                className={`${fieldBase} appearance-none pr-10 cursor-pointer ${
+                                  errors.projectType ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                                }`}
                                 aria-invalid={!!errors.projectType}
                                 aria-describedby={errors.projectType ? 'projectType-error' : undefined}
                               >
@@ -737,8 +751,9 @@ export default function Contact() {
                             value={form.location}
                             onChange={handleChange}
                             placeholder="e.g. Gangapur Road, Nashik / Dindori / Sinnar"
-                            className={`${fieldBase} ${errors.location ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                              }`}
+                            className={`${fieldBase} ${
+                              errors.location ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                            }`}
                             aria-invalid={!!errors.location}
                             aria-describedby={errors.location ? 'location-error' : undefined}
                           />
@@ -764,8 +779,9 @@ export default function Contact() {
                             value={form.message}
                             onChange={handleChange}
                             placeholder="Describe your construction requirements — type of structure, approximate built-up area or plot size, expected timeline, or any specific structural specifications."
-                            className={`${fieldBase} resize-y min-h-[130px] ${errors.message ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
-                              }`}
+                            className={`${fieldBase} resize-y min-h-[130px] ${
+                              errors.message ? 'border-red-500 ring-1 ring-red-500' : 'border-charcoal-700'
+                            }`}
                             aria-invalid={!!errors.message}
                             aria-describedby={errors.message ? 'message-error' : undefined}
                           />
