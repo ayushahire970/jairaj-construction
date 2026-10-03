@@ -8,7 +8,7 @@
 export const company = {
   name: 'Jairaj Construction',
   tagline: 'Building strong. Building for generations.',
-  owners: [
+  engineers: [
     'Uddhav Ahire',
     'Harshvardhan Chavan',
   ],
