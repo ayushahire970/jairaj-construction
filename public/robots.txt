@@ -1,0 +1,6 @@
+# Production robots.txt for Jairaj Construction
+User-agent: *
+Allow: /
+
+# Sitemap (Replace YOUR-DOMAIN-HERE with the real production domain before deployment)
+# Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml

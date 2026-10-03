@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #F5A623;
+  --color-brand-amber: #D4881A;
+  --color-charcoal-950: #0A0A0A;
+  --color-charcoal-900: #111111;
+  --color-charcoal-800: #1A1A1A;
+  --color-charcoal-700: #222222;
+  --color-charcoal-600: #2E2E2E;
+  --color-concrete-500: #4A4A4A;
+  --color-concrete-400: #6B6B6B;
+  --color-concrete-300: #8C8C8C;
+  --color-concrete-200: #B0B0B0;
+  --color-concrete-100: #D4D4D4;
+  --color-offwhite: #F5F3EF;
+  --color-offwhite-dark: #EAE8E3;
+
+  --font-family-heading: 'Barlow Condensed', sans-serif;
+  --font-family-body: 'Inter', sans-serif;
+
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family-body, 'Inter', sans-serif);
+  }
+
+  body {
+    @apply bg-offwhite text-charcoal-900 antialiased;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading, 'Barlow Condensed', sans-serif);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-pad {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Fade-in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.7s ease forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.7s ease forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Intersection observer driven animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered delay helpers */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
